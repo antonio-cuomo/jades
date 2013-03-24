@@ -1,0 +1,18 @@
+<?xml version = '1.0'?>
+<!DOCTYPE project>
+<project>
+	<taskdef name="javaflow" classname="org.apache.commons.javaflow.ant.AntRewriteTask">
+    <classpath id="javaflow_path">
+	<pathelement location="PATH_TO_CUSTOM_JAVAFLOW_JAR"/>
+	<pathelement location="PATH_TO_ASM_JARS"/>
+    <pathelement path="PATH_TO_YOUR_APP_BINARIES"/>
+    </classpath>
+	</taskdef>
+
+    <property name="javaflowclasspath" refid="javaflow_path"/>
+		<target name="javaflow">
+            <javaflow srcdir="PATH_TO_YOUR_APP_BINARIES" destdir="PATH_TO_YOUR_APP_BINARIES" >
+			<include name="**/*.class" />
+                </javaflow>
+        </target>
+</project>

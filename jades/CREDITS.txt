@@ -1,0 +1,25 @@
+JADES Simulation Library
+Copyright (c) 2012 Antonio Cuomo
+
+I am deeply indebted to my Ph.D. supervisor, prof. Umberto Villano, 
+and to prof. Massimiliano Rak, for their help and guidance while I was chasing 
+dragons (or developing this library, which is the same). 
+
+DISCLAIMER: The design of the simulation library API is inspired to the popular CSIM
+for Java simulation package, by Mesquite Software. 
+In the original JADES version, the API are very similar, even if the JADES API is 
+quite smaller (incomplete, if you want) and the implementation principles are radically
+different.
+Despite the similarity, I have never accessed CSIM for Java source code 
+neither analyzed/used/disassembled its binary code. My only source of information 
+about CSIM was the user manual publicly made available by Mesquite Software. 
+It is clear what is provided here:
+CSIM for Java is a proven, industrial strength software with over 20 year of experience in
+its design and implementation, while JADES is a project I developed during my formation years
+at university whose aims are:
+1) To experiment with Java technology, trying to support a high number of concurrent simulation 
+processes (something commonly not accomplished by Java-based process-oriented 
+simulation libraries). 
+2) To provide to the scientific community a free tool to develop Java-based simulations.
+3) To provide to interested people a base source code to use, alter and enhance in any way
+they prefer (in accordance with the provided license).

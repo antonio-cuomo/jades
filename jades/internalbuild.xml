@@ -1,0 +1,24 @@
+<?xml version = '1.0'?>
+<!DOCTYPE project>
+<project name="JADES">
+	<taskdef name="javaflow" classname="org.apache.commons.javaflow.ant.AntRewriteTask">
+    <classpath id="javaflow_path">
+	<pathelement location="lib/it/unisannio/ing/perflab/jades/custom-org-apache-commons-javaflow/2.0/custom-org-apache-commons-javaflow-2.0.jar"/>
+	<pathelement location="${plugin_classpath}"/>
+    <pathelement path="target/classes"/>
+    </classpath>
+	</taskdef>
+
+    <property name="javaflowclasspath" refid="javaflow_path"/>
+	<target name="init" description="Init">
+		<tstamp />
+	</target>
+
+
+	<target name="javaflow">
+            <echo message="javaflow classpath: ${javaflowclasspath}"/>
+            <javaflow srcdir="target/classes" destdir="target/classes" >
+			<include name="**/*.class" />
+                </javaflow>
+        </target>
+</project>
