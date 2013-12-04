@@ -18,6 +18,7 @@ The following code shows a simple example of a discrete-event simulation model u
 
 ## Contributing
 To contribute to JADES:
+
 1. Fork the project
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Added some feature'`)
