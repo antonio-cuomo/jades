@@ -8,14 +8,6 @@ Using JADES, the modeler can
 * Evaluate the simulation model using the provided simulation engine
 
 
-## Example
-The following code shows a simple example of a discrete-event simulation model using JADES
-
-
-## Testing the example
-
-
-
 ## Contributing
 To contribute to JADES:
 
